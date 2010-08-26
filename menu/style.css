@@ -1,0 +1,225 @@
+
+/*#left-tabs * {
+    background: #000000;
+}
+*/
+
+#left-tabs {
+	background: #1a1a1a;
+	color: #666;
+	width: 700px;
+    height: auto;
+	margin: 0 auto;
+	padding: 0;
+}
+#left-tabs * {
+    font-size:14px;
+	font-family:georgia, 'time new romans', serif;
+    text-align:left;
+    z-index:100;
+}
+#left-tabs a {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*#left-tabs h3 {
+	font-size:14px;
+	font-family:verdana, helvetica, arial, sans-serif;
+	letter-spacing:-1px;
+	color:#fff;
+	font-weight: 700;
+	text-transform:uppercase;
+	margin:0;
+	padding:8px 0 5px 0;
+}*/
+
+
+/*Element w rounded corners*/
+#left-tabs div.panel, #left-tabs a.tab {
+    -moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+    -moz-border-radius-bottomleft: 0;
+	-webkit-border-bottom-right-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+	border-bottom-left-radius: 0;
+    border: none;
+}
+
+/*Tab's labels*/
+#left-tabs a.tab {
+    position: fixed;
+	text-decoration: none;
+	font-size: 14px;
+	/*letter-spacing:-1px;*/
+	font-family: verdana, helvetica, arial, sans-serif;
+	color:#fff;
+	font-weight: 700;
+	display: block;
+    left: -74px;
+    padding: 15px 60px 15px 10px;
+}
+a.tab#tab-cs {
+    top: 60px;
+    color:#000000;
+    background: #a0a0a0 url(./images/icon-cs.png) 85% 55% no-repeat;
+}
+a.tab#tab-css {
+    top: 110px;
+    background:#333333 url(./images/icon-css.png) 85% 55% no-repeat;
+}
+a.tab#tab-cs:hover,
+a.tab#tab-css:hover {
+    left: 0;
+}
+
+/*a.tab#active.tab-1 {
+    background:#FF8C00 url(images/1.jpg) 85% 55% no-repeat;
+}
+a.tab#active.tab-2 {
+    background: #990099 url(images/icon-css.png) 85% 55% no-repeat;
+}*/
+
+/*Sliding panels*/
+#left-tabs div.panel {
+    position: fixed;
+	top: 50px;
+	left: 0;
+	width: 330px;
+	height: auto;
+	padding: 30px 30px 30px 120px;
+    display: none;
+    opacity: .95;
+}
+
+/*!DEFAULT Panel style*/
+#left-tabs div.panel {
+    background: #282425;
+}
+#left-tabs div.panel .list-header {
+    color: #cccccc;
+    padding: 0 0 2px 0;
+}
+#left-tabs div.panel a {
+    color: #FFF042;
+}
+#left-tabs div.panel a:hover {
+    color: #ffffff;
+}
+#left-tabs div.panel p {
+	color:#cccccc;
+	line-height:20px;
+	padding: 5px 0 15px 0;
+	margin: 0;
+	text-align: justify;
+}
+#left-tabs div.panel ul{
+	padding: 0 0 0 0;
+	margin: 0;
+	list-style-type: none;
+
+}
+#left-tabs div.panel ul.collapsed-list{
+	padding: 0 0 0 10px;
+}
+#left-tabs div.panel ul.gap {
+padding: 20px 0 0 0;
+}
+#left-tabs div.panel ul li{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+/*panel-cs*/
+#left-tabs #panel-cs {
+    background: #282425;
+}
+#left-tabs #panel-cs .list-header {
+    color: #cccccc;
+    padding: 0 0 2px 0;
+}
+#left-tabs #panel-cs a {
+    color: #FFF042;
+}
+#left-tabs #panel-cs a:hover {
+    color: #ffffff;
+}
+/*panel-css*/
+#left-tabs #panel-css {
+    background: #b8ab79;
+}
+#left-tabs #panel-css .list-header {
+    color: #4e1a1a;
+    padding: 0 0 2px 0;
+}
+#left-tabs #panel-css a {
+    color: #485332;
+}
+#left-tabs #panel-css a:hover {
+     color: #ffffff;
+}
+#left-tabs #panel-css p {
+    color: black;
+}
+
+/*Panel Elements*/
+/*Column positioning*/
+#left-tabs div.panel .columns{
+    clear: both;
+    width: 330px;
+    padding: 0 0 20px 0;
+    line-height: 22px;
+}
+.columns .colleft{
+    float: left;
+    width: 130px;
+   /* line-height: 22px;*/
+}
+.columns .colright{
+    float: right;
+    width: 130px;
+    /*line-height: 22px;*/
+}
+
+/*Close button*/
+#left-tabs div.panel .closer {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 12px;
+}
+#left-tabs div.panel .closer a img {
+	width: 16px;
+	height: 16px;
+	padding-left: 5px;
+	border: 0 solid;
+	vertical-align: middle;
+}
+/*Image logos*/
+#left-tabs div.panel .img-logo {
+	margin: 10px 0 0 0;
+}
+/*Collapsing list*/
+#left-tabs div.panel .collapser > ul li,
+#left-tabs div.panel .collapsed  > ul li {
+    list-style: none;
+}
+#left-tabs div.panel .collapser {
+    list-style: none outside url(./images/collapse.png);
+}
+#left-tabs div.panel .collapsed {
+    list-style: none outside url(./images/collapse2.png);
+}
+/*Soon labels*/
+#left-tabs div.panel .soon {
+    font-size: 10px !important;
+    position: relative;
+    top: -8px;
+    left: 1px;
+    color: #7e7e7e;
+}
