@@ -1,88 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta name="mrc__share_title" content="Официальный сайт CYBERHOUSE.SU"> <!-- проверяется первым, если указан, но content пустой, заголовок будет пустым -->
-<meta name="title" content="Официальный сайт CYBERHOUSE.SU"> <!-- проверяется, если не указан mrc__share_title -->
-<title>Официальный сайт CYBERHOUSE.SU</title> <!-- проверяется последним --->
-<meta name="mrc__share_description" content="Интернет-портал посвященый Counter-Strike 1.6<br>
-Игровой сервер: pub.cyberhouse.su:27039<br>
-Новости сервера, игр, ПК, футбола и киберспорта.<br>
-STREAM TV - Прямые трансляции с чемпионатов по Counter-Strike.<br>
-Плагины, моды, серверы и различные файлы для Counter-Strike.<br>
-Банлист сервера, Подробная статистика "Psychostats" игроков сервера."> <!-- проверяется первым, если указан, но content пустой, описание будет пустым -->
-<meta name="description" content="..."> <!-- проверяется, если не указан mrc__share_description -->
-<meta name='yandex-verification' content='5ef8df267ee86e83' />
-{headers}
+    <head>
+        <title>Официальный сайт CYBERHOUSE.SU</title>
+        <meta name="title" content="Официальный сайт CYBERHOUSE.SU">
+        <meta name="description" content="Интернет-портал посвященый Counter-Strike 1.6<br>
+        Игровой сервер: pub.cyberhouse.su:27039<br>
+        Новости сервера, игр, ПК, футбола и киберспорта.<br>
+        STREAM TV - Прямые трансляции с чемпионатов по Counter-Strike.<br>
+        Плагины, моды, серверы и различные файлы для Counter-Strike.<br>
+        Банлист сервера, Подробная статистика Psychostats игроков сервера.">
+        <meta name='yandex-verification' content='5ef8df267ee86e83'/>
 
-<script type="text/javascript" src="{THEME}/css/api.js"></script>
-<style type="text/css" media="all">
-@import url({THEME}/css/style.css);
+        {headers}
 
-.hr_line {uj
-	background: url({THEME}/images/line.gif);
-	width: 100%;
-	height: 7px;
-	font-size: 3px;
-	font-family: tahoma;
-	margin-top: 4px;
-	margin-bottom: 4px;
-}
+        <style type="text/css" media="all">
+            @import url({THEME}/css/style.css);
+            @import url({THEME}/css/engine.css);
+            .hr_line {
+                background: url({THEME}/images/line.gif);
+                width: 100%;
+                height: 7px;
+                font-size: 3px;
+                font-family: Tahoma;
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+            .hintanchor {
+                padding-left: 12px;
+            }
+            <!--
+                A.ssmItems:link		{color:black;text-decoration:none;}
+                A.ssmItems:hover	{color:black;text-decoration:none;}
+                A.ssmItems:active	{color:black;text-decoration:none;}
+                A.ssmItems:visited	{color:black;text-decoration:none;}
+            //-->
+        </style>
 
-   .hintanchor{
-     padding-left: 12px;
-   }
- </style>
- <script language="JavaScript" src="{THEME}/default.js"></script>
-</style>
-<style type="text/css" media="all">
-@import url({THEME}/css/engine.css);
-</style>
-
-<STYLE><!--
-A.ssmItems:link		{color:black;text-decoration:none;}
-A.ssmItems:hover	{color:black;text-decoration:none;}
-A.ssmItems:active	{color:black;text-decoration:none;}
-A.ssmItems:visited	{color:black;text-decoration:none;}
-//--></STYLE>
-<SCRIPT SRC="{THEME}/css/ssm.js" language="JavaScript1.2"></SCRIPT>
-<SCRIPT SRC="{THEME}/css/ssmItems.js" language="JavaScript1.2"></SCRIPT>
-
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-function stats_window()
-{
-window.open('http://www.cyberhouse.su/index.php?do=static&page=statistika_02','newwin','top=15, left=20, menubar=0, toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=1, width=400, height=300');
-}
-// -->
-</SCRIPT>
-
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-function ban_window()
-{
-window.open('http://www.cyberhouse.su/amxbans/ban_list.php','newwin','top=15, left=20, menubar=0, toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=1, width=400, height=300');
-}
-// -->
-</SCRIPT>
-
+        <script type="text/javascript" src="{THEME}/css/api.js"></script>
+        <script type="text/javascript" src="{THEME}/default.js"></script>
+        <script type="text/javascript" src="{THEME}/css/ssm.js" language="JavaScript1.2"></script>
+        <script type="text/javascript" src="{THEME}/css/ssmItems.js" language="JavaScript1.2"></script>
+        <script type="text/javascript">
+        <!--function stats_window() {
+            window.open('http://www.cyberhouse.su/index.php?do=static&page=statistika_02','newwin','top=15, left=20, menubar=0, toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=1, width=400, height=300');
+            }
+            function ban_window() {
+                window.open('http://www.cyberhouse.su/amxbans/ban_list.php','newwin','top=15, left=20, menubar=0, toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=1, width=400, height=300');
+            }
+       // -->
+       </script>
 </head>
-{AJAX}
 
-<BR>
-<div align="center"><TABLE borderColor=#ffffff cellSpacing=1 cellPadding=0 width="982" align=center bgColor=#2b2b29 border=1>
-  <TBODY>
-    <TD>
-      <TABLE height="0%" cellSpacing=0 cellPadding=0 width="950" border=0>
-        <TBODY>
-        <TR>
-          <TD height=0 colSpan=0>
-            <TABLE cellSpacing=0 cellPadding=0 width="982" border=0 bgcolor="silver">
-              <TBODY>
-              <TR>
-                <TD width=982 align="center" bgcolor=2b2b29><center><IMG src="{THEME}/images/logo.jpg"></TD>
-                <TD width="0">
-                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
-            </TABLE></TD></TBODY></TABLE></TD></TR>
-        <TR></div>
+{AJAX}
+    <BODY>
+    <BR>
+    <div align="center">
+        <TABLE borderColor=#ffffff cellSpacing=1 cellPadding=0 width="982" align=center bgColor=#2b2b29 border=1>
+            <TBODY>
+                <TD>
+                    <TABLE height="0%" cellSpacing=0 cellPadding=0 width="950" border=0>
+                        <TBODY>
+                            <TR>
+                                <TD height=0 colSpan=0>
+                                    <TABLE cellSpacing=0 cellPadding=0 width="982" border=0 bgcolor="silver">
+                                        <TBODY>
+                                            <TR>
+                                                <TD width=982 align="center" bgcolor=2b2b29><center><IMG src="{THEME}/images/logo.jpg"></TD>
+                                                <TD width="0">
+                                                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0></TABLE>
+                                                </TD>
+                                            </TR>
+                                        </TBODY>
+                                    </TABLE>
+                                </TD>
+                            </TR>
+                            <TR></div>
           <TD colSpan=0 height=0>
             <TABLE height=21 cellSpacing=0 cellPadding=0 width="100%" border=0>
               <TBODY>
