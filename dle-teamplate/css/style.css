@@ -260,18 +260,18 @@ padding: 1px;
 
 
 
-#navi ul {
+.navi ul {
       list-style: none;
       margin: 0;
       padding: 0;
       border: none;
       }
 		
-#navi li {
+.navi li {
       border-bottom: 1px solid #2b2b29;
       margin: 0;
       }
-#navi li a {
+.navi li a {
       display: block;
       padding: 2px 2px 2px 0.5em;
       background-color: #666666;
@@ -280,11 +280,11 @@ padding: 1px;
       width: 100%;
       }
 
-html>body #navi li a {
+html>body .navi li a {
       width: auto;
       }
 
-#navi li a:hover {
+.navi li a:hover {
       border-left: 0px solid #2b2b29;
       background-color: #ff6605;
       color: #FFFFFF;

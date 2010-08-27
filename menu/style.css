@@ -3,26 +3,24 @@
     background: #000000;
 }
 */
-
-#left-tabs {
-	background: #1a1a1a;
-	color: #666;
-	width: 700px;
-    height: auto;
-	margin: 0 auto;
-	padding: 0;
-}
 #left-tabs * {
     font-size:14px;
-	font-family:georgia, 'time new romans', serif;
+	font-family: georgia, 'time new romans', serif;
     text-align:left;
     z-index:100;
-}
-#left-tabs a {
     margin: 0;
     padding: 0;
-    cursor: pointer;
     text-decoration: none;
+    border: none;
+}
+#left-tabs {
+	width: 700px;
+    height: auto;
+	margin: 0 auto;	
+}
+
+#left-tabs a {
+    cursor: pointer;    
 }
 /*#left-tabs h3 {
 	font-size:14px;
@@ -37,7 +35,7 @@
 
 
 /*Element w rounded corners*/
-#left-tabs div.panel, #left-tabs a.tab {
+#left-tabs .panel, #left-tabs .tab {
     -moz-border-radius-topright: 20px;
 	-moz-border-radius-bottomright: 20px;
     -moz-border-radius-bottomleft: 0;
@@ -47,15 +45,12 @@
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 	border-bottom-left-radius: 0;
-    border: none;
+
 }
 
 /*Tab's labels*/
-#left-tabs a.tab {
-    position: fixed;
-	text-decoration: none;
-	font-size: 14px;
-	/*letter-spacing:-1px;*/
+#left-tabs .tab {
+    position: fixed;	
 	font-family: verdana, helvetica, arial, sans-serif;
 	color:#fff;
 	font-weight: 700;
@@ -63,17 +58,17 @@
     left: -74px;
     padding: 15px 60px 15px 10px;
 }
-a.tab#tab-cs {
+.tab#tab-cs {
     top: 60px;
     color:#000000;
     background: #a0a0a0 url(./images/icon-cs.png) 85% 55% no-repeat;
 }
-a.tab#tab-css {
+.tab#tab-css {
     top: 110px;
     background:#333333 url(./images/icon-css.png) 85% 55% no-repeat;
 }
-a.tab#tab-cs:hover,
-a.tab#tab-css:hover {
+.tab#tab-cs:hover,
+.tab#tab-css:hover {
     left: 0;
 }
 
@@ -85,51 +80,51 @@ a.tab#active.tab-2 {
 }*/
 
 /*Sliding panels*/
-#left-tabs div.panel {
+#left-tabs .panel {
     position: fixed;
-	top: 50px;
-	left: 0;
-	width: 330px;
+    width: 330px;
 	height: auto;
+	top: 50px;
+    left: 0;
 	padding: 30px 30px 30px 120px;
-    display: none;
     opacity: .95;
+    display: none;
 }
 
 /*!DEFAULT Panel style*/
-#left-tabs div.panel {
+#left-tabs .panel {
     background: #282425;
 }
-#left-tabs div.panel .list-header {
+#left-tabs .panel .list-header {
     color: #cccccc;
     padding: 0 0 2px 0;
 }
-#left-tabs div.panel a {
+#left-tabs .panel a {
     color: #FFF042;
 }
-#left-tabs div.panel a:hover {
+#left-tabs .panel a:hover {
     color: #ffffff;
 }
-#left-tabs div.panel p {
+#left-tabs .panel p {
 	color:#cccccc;
 	line-height:20px;
 	padding: 5px 0 15px 0;
 	margin: 0;
 	text-align: justify;
 }
-#left-tabs div.panel ul{
+#left-tabs .panel ul{
 	padding: 0 0 0 0;
 	margin: 0;
 	list-style-type: none;
 
 }
-#left-tabs div.panel ul.collapsed-list{
+#left-tabs .panel ul.collapsed-list{
 	padding: 0 0 0 10px;
 }
-#left-tabs div.panel ul.gap {
+#left-tabs .panel ul.gap {
 padding: 20px 0 0 0;
 }
-#left-tabs div.panel ul li{
+#left-tabs .panel ul li{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
@@ -168,7 +163,7 @@ padding: 20px 0 0 0;
 
 /*Panel Elements*/
 /*Column positioning*/
-#left-tabs div.panel .columns{
+#left-tabs .panel .columns{
     clear: both;
     width: 330px;
     padding: 0 0 20px 0;
@@ -186,14 +181,13 @@ padding: 20px 0 0 0;
 }
 
 /*Close button*/
-#left-tabs div.panel .closer {
-	display: block;
+#left-tabs .panel .closer {	
 	position: absolute;
 	right: 20px;
 	top: 20px;
 	font-size: 12px;
 }
-#left-tabs div.panel .closer a img {
+#left-tabs .panel .closer a img {
 	width: 16px;
 	height: 16px;
 	padding-left: 5px;
@@ -201,22 +195,22 @@ padding: 20px 0 0 0;
 	vertical-align: middle;
 }
 /*Image logos*/
-#left-tabs div.panel .img-logo {
+#left-tabs .panel .img-logo {
 	margin: 10px 0 0 0;
 }
 /*Collapsing list*/
-#left-tabs div.panel .collapser > ul li,
-#left-tabs div.panel .collapsed  > ul li {
+#left-tabs .panel .collapser > ul li,
+#left-tabs .panel .collapsed  > ul li {
     list-style: none;
 }
-#left-tabs div.panel .collapser {
+#left-tabs .panel .collapser {
     list-style: none outside url(./images/collapse.png);
 }
-#left-tabs div.panel .collapsed {
+#left-tabs .panel .collapsed {
     list-style: none outside url(./images/collapse2.png);
 }
 /*Soon labels*/
-#left-tabs div.panel .soon {
+#left-tabs .panel .soon {
     font-size: 10px !important;
     position: relative;
     top: -8px;
