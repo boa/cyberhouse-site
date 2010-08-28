@@ -14,16 +14,16 @@
 
         <meta name='yandex-verification' content='5ef8df267ee86e83'>        
 
-        <link rel="stylesheet" href="./css/style.css" type="text/css" />
-        <link rel="stylesheet" href="./css/engine.css" type="text/css" />
+        <link rel="stylesheet" href="{theme}/css/style.css" type="text/css" />
+        <link rel="stylesheet" href="{theme}/css/engine.css" type="text/css" />
         <link rel="stylesheet" href="s.css" type="text/css" />
 
-        <!--<script type="text/javascript" src="./css/api.js"></script>
-        <script type="text/javascript" src="./default.js"></script>-->
+        <script type="text/javascript" src="{theme}/css/api.js"></script>
+        <script type="text/javascript" src="{theme}/default.js"></script>
 
         <script type="text/javascript" src="http://vkontakte.ru/js/api/share.js?5" charset="windows-1251"></script>       
-        <script type="text/javascript" src="./css/ssm.js"></script>
-        <script type="text/javascript" src="./css/ssmItems.js"></script>
+        <script type="text/javascript" src="{theme}/css/ssm.js"></script>
+        <script type="text/javascript" src="{theme}/css/ssmItems.js"></script>
         <script type="text/javascript">
             <!--
             function stats_window() {
@@ -43,38 +43,25 @@
 
         <BR>
         <div align="center">
-            <TABLE borderColor=#ffffff cellSpacing=1 cellPadding=0 width="982" align=center bgColor=#2b2b29 border=1>
+            <TABLE borderColor=#fff cellSpacing=1 cellPadding=0 width="982" align=center bgColor=#2b2b29 border=1>
             <TBODY>
                 <TR>
                 <TD>
                     <TABLE height="0%" cellSpacing=0 cellPadding=0 width="950" border=0>
                         <TBODY>
                             <TR>
-                                <TD height=0 colSpan=0>
-                                    <TABLE cellSpacing=0 cellPadding=0 width="982" border=0 bgcolor="silver">
-                                        <TBODY>
-                                            <TR>
-                                                <TD width=982 align="center" bgcolor=2b2b29>
-                                                    <center><IMG src="./images/logo.jpg"></center>
-                                                </TD>
-                                                <TD width="0">
-                                                    <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0></TABLE>
-                                                </TD>
-                                            </TR>
-                                        </TBODY>
-                                    </TABLE>
-                                </TD>
-                            </TR>
+                            <TD height=0 colSpan=0>
+                            <TABLE cellSpacing=0 cellPadding=0 width="982" border=0 bgcolor="silver">
+                                <TBODY>
+                                <TR>
+                                <TD width=982 align="center" bgcolor=#2b2b29>
+                                    <IMG src="{theme}/images/logo.jpg">
+                            </TABLE>
                             <TR>
-                                <TD colSpan=0 height=0>
-                                    <TABLE height=21 cellSpacing=0 cellPadding=0 width="100%" border=0>
-                                        <TBODY>
-                                            <TR></TR>
-                                        </TBODY>
-                                    </TABLE>
-                                </TD>
-                            </TR>
-                        </TBODY>
+                            <TD colSpan=0 height=0>
+                            <TABLE height=21 cellSpacing=0 cellPadding=0 width="100%" border=0>
+                                <TBODY><TR>
+                            </TABLE>
                     </TABLE>
 
                     <!-- Начало баннерного блока -->
@@ -82,67 +69,37 @@
                         <TBODY>
                             <TR>
                                 <TD vAlign=top bgColor=#2b2b29>
-                                    <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ff border=0>
+                                    <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#fff border=0>
                                         <TBODY>
                                             <TR>
-                                                <TD width="100%" height=29
-                                                    style="background-image:url('./images/menu_180.png'); text-align: center; color:#ff6605; font-weight: bold">
+                                                <TD class="block-header">
                                                     Баннеры
-                                                </TD>
-                                            </TR>
                                             <TR>
                                                 <TD bgColor=#2b2b29>
-                                                <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#fff border=0 align="center">
-                                                <TBODY>
-                                                <TR bgColor=#2b2b29>
-                                                    <TD valign="top" style="padding-left:10px;padding-right:10px;">
-                                                    <br>
-                                                    <div style="border: 1px solid #dcdcdc; background-color: #474747; text-align: center; color:#fff;">
-                                                        {banner_header_myarena}
+                                                    <div class="block-inner-thing">
+                                                        <div class="block-img" align="center">
+                                                          {banner_header_myarena}
+                                                        </div>
                                                     </div>
-                                                    </TD>
-                                                </TR>
-                                                </TBODY>
-                                                </TABLE>
-                                                </TD>
-                                            </TR>
                                             <TR>
                                                 <TD bgColor=#2b2b29>
-                                                <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#fff border=0 >
-                                                <TBODY>
-                                                <TR bgColor=#2b2b29>
-                                                    <TD valign="top" style="padding-left:10px;padding-right:10px;">
-                                                    <br>
-                                                    <div style="border: 1px solid #dcdcdc; background-color: #474747; text-align: center; color:#fff;">
-                                                        {banner_vkontakte}
+                                                    <div class="block-inner-thing">
+                                                        <div class="block-img" align="center">
+                                                          {banner_vkontakte}
+                                                        </div>
                                                     </div>
-                                                    </TD>
-                                                </TR>
-                                                </TBODY>
-                                                </TABLE>
-                                                </TD>
-                                            </TR>
-                                        </TBODY>
                                     </TABLE>
-                                </TD>
-                            </TR>
-                        </TBODY>
                     </TABLE>
                     <!-- Конец баннерного блока -->
 
-                    <TABLE cellSpacing=0 cellPadding=0 width="100%" background="./images/1mini_fon.png" border=0 valign="top">
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" background="{theme}/images/1mini_fon.png" border=0 valign="top">
                         <TBODY>
                             <TR vAlign=top>
-
-                                <TD background="./images/spacer.gif">
-                                    <IMG height=1 alt="" src="./images/spacer.gif" width=6 border=0>
-                                </TD>
-
+                                <TD class="block-spacer">
                                 <!-- Начало левой колонки -->
                                 <TD width=170>
-
                                     <!-- Блок: Разделы сайта -->
-                                    <TABLE cellSpacing=1 cellPadding=0 width="100%" background="./images/ser2.gif" border=0 bgColor=#fff>
+                                    <TABLE cellSpacing=1 cellPadding=0 width="100%" border=0 bgColor=#fff>
                                         <TBODY>
                                             <TR>
                                                 <TD class="block-header">
@@ -347,7 +304,7 @@
                                         <TBODY>
                                             <TR>
                                                 <TD class="block-header">
-                                                Партнеры портала
+                                                ТОП 10 Новостей
                                             <TR>
                                                 <TD bgColor=#2b2b29>
                                                     <div class="block-inner-thing">
@@ -357,31 +314,6 @@
                                     <!-- Конец блока -->
                                     <br>
 
-                                    <!-- Блок: Реклама -->
-                                    <TABLE class="block" cellSpacing=0 cellPadding=0 width="100%" bgColor=#fff border=0>
-                                        <TBODY>
-                                            <TR>
-                                                <TD class="block-header">
-                                                Реклама
-                                            <TR>
-                                                <TD bgColor=#2b2b29>
-                                                    <div class="block-inner-thing">
-                                                        <div class="block-img" align="center">
-                                                        <script type="text/javascript"><!--
-                                                            google_ad_client = "pub-5301982085593943";
-                                                            /* cyberhouse, 120x240, создано 26.01.10 */
-                                                            google_ad_slot = "0824992827";
-                                                            google_ad_width = 120;
-                                                            google_ad_height = 240;
-                                                            //-->
-                                                            </script>
-                                                            <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-                                                            </script>
-                                                        </div>
-                                                    </div>
-                                    </TABLE>
-                                    <!-- Конец блока -->
-                                    <br>
 
                                     <span style="color:#fff; font-weight:bold">Сменить дизайн:</span>
                                     {changeskin}
@@ -390,17 +322,15 @@
                                 <!-- Конец левой колонки -->
 
                                 <!-- Начало контента -->
-                                <TD>
-                                    <IMG height=1 alt="" src="./images/spacer.gif" width=6 border=0>
-                                </TD>
+                                <TD class="block-spacer">
                                 <TD width="100%">
 
                                     {info}
                                     {content}
 
                                 </TD>
-                                <TD background="./images/1mini_fon.png">
-                                    <IMG height=1 alt="" src="./images/spacer.gif" width=6 border=0>
+                                <TD background="{theme}/images/1mini_fon.png">
+                                    <TD class="block-spacer">
                                 </TD>
                                 <!-- Конец контента -->
 
@@ -533,12 +463,12 @@
                                                         <a href=http://cs-master.ru target=_blank>Рейтинг cs серверов</a>
                                                         <a href='http://virtuality-life.ru/' target='_blank'>мониторинг серверов cs 1.6</a>
                                                         <a href="http://www.agrank.com/" target="_blank">Сервера CS 1.6</a><br>
-                                                        <a href="http://pro-cs.ru/"><img src="http://pro-cs.ru/adv/" width="88" height="31" border="0" alt="Мониторинг серверов CS 1.6, СSS,
-                                                        Condition Zero - http://pro-cs.ru" title="Pro-CS.RU - Игровые сервера CS 1.6, СSS, Condition Zero"></a>
-                                                        <a href="http://www.gamearmy.ru/monitor"><img border="0" src="http://www.gamearmy.ru/images/banner.gif" width="88" height="31"
-                                                        alt="Мониторинг серверов"></a>
+                                                        <a href="http://pro-cs.ru/">
+                                                            <img src="http://pro-cs.ru/adv/" width="88" height="31" border="0" alt="Мониторинг серверов CS 1.6, СSS, Condition Zero - http://pro-cs.ru" title="Pro-CS.RU - Игровые сервера CS 1.6, СSS, Condition Zero"></a>
+                                                        <a href="http://www.gamearmy.ru/monitor">
+                                                            <img border="0" src="http://www.gamearmy.ru/images/banner.gif" width="88" height="31" alt="Мониторинг серверов"></a>
                                                         <a href="http://server-rating.ru" title="SERVER-RATING.ru - Мониторинг и рейтинг игровых серверов">
-                                                        <img src="http://server-rating.ru/counter.jpg" width="88" height="31" border=0></a>
+                                                            <img src="http://server-rating.ru/counter.jpg" width="88" height="31" border=0></a>
                                                         <a href="http://www.monitorcs.ru/" target="_blank"><img border="0" src="http://www.monitorcs.ru/banner.gif" title="Сервера CS 1.6" alt="Сервера CS 1.6" width="88" height="31"></a>
                                                         <a href="http://your-cs.ru/" title="CS мониторинг"><img src="http://your-cs.ru/img/logo/88-31.gif" alt="Cs мониторинг серверов" border=0></a>
                                                         <a href="http://cs-db.ru" title="Мониторинг Серверов KC" target="_blank"> <img src="http://cs-db.ru/paco/cs-db.gif" alt="Мониторинг серверов CS-DB.RU" width="88" height="31" border="0" /></a>
@@ -588,7 +518,7 @@
                                     <br>
 
 
-                                    <TD background="./images/spacer.gif" background="./images/1mini_fon.png"><IMG height=1 alt="" src="./images/spacer.gif" width=6 border=0>
+                                    <TD background="{theme}/images/spacer.gif" background="{theme}/images/1mini_fon.png"><IMG height=1 alt="" src="{theme}/images/spacer.gif" width=6 border=0>
                                     
                                 </TD>
                             </TR>
@@ -596,7 +526,7 @@
                     </TABLE>
 
                     <!-- Начало Подвала -->
-                    <TABLE cellSpacing=0 cellPadding=1 width="100%" background="./images/ser2.gif" border=0 bgColor=#fff>
+                    <TABLE cellSpacing=0 cellPadding=1 width="100%" background="{theme}/images/ser2.gif" border=0 bgColor=#fff>
                         <TBODY>
                             <TR>
                                 <TD class="block-header">

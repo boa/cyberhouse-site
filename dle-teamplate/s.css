@@ -30,6 +30,12 @@
 padding: 10px;
 }
 
+.block-spacer {
+    width: 6px;   
+    display: block;
+
+}
+
 .hr_line {
 background: url(./images/line.gif);
 width: 100%;
